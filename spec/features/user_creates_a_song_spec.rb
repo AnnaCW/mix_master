@@ -14,14 +14,18 @@ RSpec.feature "User submits a new song" do
   expect(page).to have_content song_title
   expect(page).to have_link artist.name, href: artist_path(artist)
   end
+
+  context "the submitted data is invalid" do
+    scenario "user sees an error message" do
+    artist = create(:artist)
+
+    visit artist_path(artist)
+    click_on "New Song"
+    click_on "Create Song"
+
+    expect(page).to have_content "Title can't be blank"
+    end
+  end
+
+
 end
-
-
-# As a user
-# Given that artists exist in the database
-# When I visit the artist songs index
-# And I click "New song"
-# And I fill in the title
-# And I click "Create Song"
-# Then I should see the song name
-# And I should see a link to the song artist's individual page
