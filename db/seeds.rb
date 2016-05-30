@@ -8,3 +8,4 @@
 
 Artist.create(name: "Miles Davis", image_path: "https://pixabay.com/static/uploads/photo/2015/01/22/13/51/miles-davis-607733_960_720.jpg")
 Artist.create(name: "Louis Armstrong", image_path: "https://pixabay.com/static/uploads/photo/2014/07/20/22/16/louis-armstrong-398146_960_720.jpg")
+Artist.create(name: "Ella Fitzgerald", image_path: "https://pixabay.com/en/ella-fitzgerald---female-portrait-1275909/")
