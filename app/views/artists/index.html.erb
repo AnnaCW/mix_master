@@ -3,17 +3,17 @@
 <h1>All Artists</h1>
 
 
+<h4><%= link_to "New Artist", new_artist_path %></h4>
 
-<%= link_to "New Artist", new_artist_path %>
 
-
-<div class="artists_listing">
+<div class="container">
   <ul>
-    <li> <% @artists.each do |artist| %>
-      <%= link_to artist.name, artist_path(artist) %>
+    <% @artists.each do |artist| %>
+      <li><%= link_to artist.name, artist_path(artist) %></li>
       <% end %>
-    </li>
-  </ul>
+    </ul>
+  </div>
+  
 </div>
 
 </div>
