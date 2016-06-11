@@ -14,6 +14,7 @@ class ArtistsController < ApplicationController
     if @artist.save
       redirect_to @artist
     else
+      flash[:error] = "#{@artist.errors.full_messages.join(", ")}"
       render :new
     end
   end
