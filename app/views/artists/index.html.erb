@@ -3,16 +3,17 @@
 <h1>All Artists</h1>
 
 
-<h4><%= link_to "New Artist", new_artist_path %></h4>
+<h4><%= link_to "New Artist", new_artist_path, class: "btn btn-primary" %></h4>
 
 
-<div class="artists_listing">
-  <ul>
+<table class="table table-hover">
     <% @artists.each do |artist| %>
-      <li><%= link_to artist.name, artist_path(artist) %></li>
+      <tr>
+      <td><%= link_to artist.name, artist_path(artist) %></td>
       <% end %>
-    </ul>
-  </div>
+    </tr>
+    <tr><td></td></tr>
+  </table>
 
 </div>
 

@@ -3,7 +3,7 @@
 
 .welcome {
   width: auto;
-  height: 800px;
+  height: 600px;
   background-image: url("http://www.abc.net.au/news/image/5960050-3x2-940x627.jpg");
   background-size: cover;
  }
@@ -16,3 +16,7 @@
  nav {
    background: inherit;
  }
+
+a {
+  color: black;
+}

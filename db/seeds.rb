@@ -9,3 +9,4 @@
 Artist.create(name: "Miles Davis", image_path: "http://depositphotos.com/59817899/stock-photo-old-fashioned-turntable-playing-a.html")
 Artist.create(name: "Louis Armstrong", image_path: "https://pixabay.com/static/uploads/photo/2014/07/20/22/16/louis-armstrong-398146_960_720.jpg")
 Artist.create(name: "Ella Fitzgerald", image_path: "https://pixabay.com/en/ella-fitzgerald---female-portrait-1275909/")
+Artist.create(name: "Chuck Ragan", image_path: "")
